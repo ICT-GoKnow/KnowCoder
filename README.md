@@ -155,6 +155,7 @@ We conduct supervised experiments on four IE tasks, including NER, RE, ED, and E
 
 
 # 🚀 Demo
+<video src="https://github.com/ICT-GoKnow/KnowCoder/assets/115405099/7c0c3ec0-2b2c-46ed-8ec2-b215bac1bbf7"> </video>
 
 *Demo of the chat interface. KnowCoder not only demonstrated strong strength in English information extraction across thousands of given knowledge types, while also delivering commendable results in Chinese information extraction, facilitated by our Schema Representation Method.*
 
