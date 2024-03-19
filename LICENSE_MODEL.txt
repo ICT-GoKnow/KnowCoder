@@ -1,0 +1,43 @@
+1. Definitions
+    "Licensor" refers to the KnowCoder Team, which distributes the software
+    under this license. "Software" comprises the KnowCoder parameters made
+    available to you under this license.
+    
+2. License Grant
+    Subject to the terms of this license, the licensor grants you a
+    non-exclusive, worldwide, non-transferable, non-sublicensable, and revocable
+    copyright license to use the software for non-commercial research purposes
+    only.
+    
+    All copies or substantial portions of the software must include the
+    original copyright notice and this permission notice.
+
+3. Restrictions
+    You are prohibited from using, copying, modifying, merging, publishing,
+    distributing, reproducing, or creating derivative works of the software,
+    either in full or in part, for any commercial, military, or unlawful
+    purposes.
+
+    The software must not be used in any manner that compromises China's
+    national security and unity, the public interest, or infringes on the rights
+    and interests of individuals.
+
+4. Disclaimer 
+    The software is provided "as is", without any warranty, express or
+    implied, including but not limited to the implied warranties of merchantability,
+    fitness for a particular purpose, and non-infringement. The authors or copyright
+    holders shall not be liable for any claim, damages, or other liability, whether
+    in an action of contract, tort, or otherwise, arising from the use of the
+    software or any other dealings in the software.
+
+5. Limitation of Liability 
+    To the maximum extent permitted by applicable law,
+    neither the licensor nor any copyright holder will be liable for any indirect,
+    special, incidental, exemplary, or consequential damages, including but not
+    limited to loss of profits, arising out of the use of the software, even if
+    advised of the possibility of such damages.
+
+6. Dispute Resolution
+    This license is governed by the laws of the People's Republic of China. Any
+    disputes related to this license will be adjudicated exclusively in the People's
+    Court of Haidian District, Beijing.
