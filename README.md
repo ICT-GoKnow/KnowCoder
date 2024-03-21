@@ -9,7 +9,7 @@ Information Extraction </h1>
 <p align="center">
 <a href="https://arxiv.org/abs/2403.07969">📃 Paper</a>
 |
-<a href="https://huggingface.co/collections/ICT-GoKnow/knowcoder-65f2a9592b802e8713203471" >🤗 Resource (Schema • Data • Model)</a>
+<a href="https://huggingface.co/collections/golaxy/knowcoder-65fc3cd385d98567da412abf" >🤗 Resource (Schema • Data • Model)</a>
 |
 <a href="https://ict-goknow.github.io/knowcoder/">🚀 Try KnowCoder (coming soon)!</a>
 </p>
@@ -23,7 +23,7 @@ We released <img src="assets/logo.png" width="16"> KnowCoder, a powerful Large L
 
 To comprehensively assess its efficacy, we conducted various and comprehensive evaluations across **33** widely recognized information extraction benchmarks:
 
-- After code pretraining on around **1.5**B automatically constructed data, KnowCoder already attains remarkable generalization ability and achieves NER improvements compared to LLaMA2 by **49.8**% relative F1 under the **few-shot setting**.
+- After code pretraining on around 1.5B automatically constructed data, KnowCoder already attains remarkable generalization ability and achieves NER improvements compared to LLaMA2 by **49.8**% relative F1 under the **few-shot setting**.
 
 - After instruction tuning, KnowCoder further exhibits strong generalization ability on unseen schemas and achieves up to **12.5**% and **21.9**% under the **zero-shot setting** and the **low resource setting**, respectively.
 
@@ -40,7 +40,7 @@ To comprehensively assess its efficacy, we conducted various and comprehensive e
 
 # 🏷️ KnowCoder Schema
 
-We construct the code-style schema library based on Wikidata (Note that we use the Wikidata dump up to 20220704) with the **schema representation method** blow.
+We construct the code-style schema library based on Wikidata (Note that we use the Wikidata dump up to 20220704) with the **schema representation method** blow, i.e. KnowCoder Schema. The KnowCoder Schema is released in [🤗KnowCoder-Schema](https://huggingface.co/datasets/golaxy/KnowCoder-Schema-Library).
 
 <p align="center">
    <img src="assets/knowcoder_schema_case.png" alt="An illustration of KnowCoder schemas." style="width: 85%;">
@@ -59,17 +59,17 @@ We select the concepts included in the existing IE datasets created from Wikidat
 
 # 📚 KnowCoder Dataset
 
-KnowCoder Dataset consists of three parts: schema understanding data, schema following data, and specific domain IE data, which is released in [🤗KnowCoder](https://huggingface.co/collections/ICT-GoKnow/knowcoder-65f2a9592b802e8713203471).
+KnowCoder Dataset consists of three parts: schema understanding data, schema following data, and specific domain IE data, which is released in [🤗KnowCoder](https://huggingface.co/collections/golaxy/knowcoder-65fc3cd385d98567da412abf).
 
 ### 1. Schema Understanding Data
 
-The schema understanding data includes schema definition codes and schema instance codes, which is released in [🤗Schema-Understanding-Data](https://huggingface.co/datasets/ICT-GoKnow/Schema-Understanding-Data). The schema definition codes are constructed based on the KnowCoder Schema, and the schema instance codes are constructed based on [KELM](https://github.com/google-research-datasets/KELM-corpus).
+The schema understanding data includes schema definition codes and schema instance codes, which is released in [🤗Schema-Understanding-Data](https://huggingface.co/datasets/golaxy/KnowCoder-Schema-Understanding-Data). The schema definition codes are constructed based on the KnowCoder Schema, and the schema instance codes are constructed based on [KELM](https://github.com/google-research-datasets/KELM-corpus).
 
 The cases of schema understanding data are shown [here](Cases.md).
 
 ### 2. Schema Following Data
 
-The schema following data is constructed on [UniversalNER](https://huggingface.co/Universal-NER), [InstructIE](https://huggingface.co/datasets/zjunlp/InstructIE), and [LSEE](https://github.com/acl2017submission/event-data), which is released in [🤗Schema-Following-Data](https://huggingface.co/datasets/ICT-GoKnow/Schema-Following-Data).
+The schema following data is constructed on [UniversalNER](https://huggingface.co/Universal-NER), [InstructIE](https://huggingface.co/datasets/zjunlp/InstructIE), and [LSEE](https://github.com/acl2017submission/event-data), which is released in [🤗Schema-Following-Data](https://huggingface.co/datasets/golaxy/KnowCoder-Schema-Following-Data).
 
 The cases of schema following data are shown [here](Cases.md).
 
@@ -97,8 +97,8 @@ For specific domain Information Extraction (IE), we conduct experiments utilizin
 After two phases of training (i.e. Schema Understanding Phase and Schema Following Phase) on KnowCoder Dataset, KnowCoder has the powerful general information extraction ability under Zero-shot, Few-shot, Low-resource, and Supervised settings. 
 
 We release two variants of KnowCoder, the base version trained in two phases and the IE version further refined with Specific Domain IE Data on the base version:
-- [KnowCoder-7b-base](https://huggingface.co/ICT-GoKnow/KnowCoder-7B-base): using Llama-2-7b as the backbone with 4k context window.
-- [KnowCoder-7b-IE](https://huggingface.co/ICT-GoKnow/KnowCoder-7B-IE): using Llama-2-7b as the backbone with 4k context window.
+- [KnowCoder-7b-base](https://huggingface.co/golaxy/KnowCoder-7B-base): using Llama-2-7b as the backbone with 4k context window.
+- [KnowCoder-7b-IE](https://huggingface.co/golaxy/KnowCoder-7B-IE): using Llama-2-7b as the backbone with 4k context window.
 
 
 # 💥 Performance
@@ -155,9 +155,8 @@ We conduct supervised experiments on four IE tasks, including NER, RE, ED, and E
 
 
 # 🚀 Demo
-<video src="https://github.com/ICT-GoKnow/KnowCoder/assets/115405099/7c0c3ec0-2b2c-46ed-8ec2-b215bac1bbf7"> </video>
 
-*Demo of the chat interface. KnowCoder not only demonstrated strong strength in English information extraction across thousands of given knowledge types, while also delivering commendable results in Chinese information extraction, facilitated by our Schema Representation Method.*
+**Coming soon!**
 
 
 # :warning: Limitations
