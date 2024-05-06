@@ -11,7 +11,7 @@ Information Extraction </h1>
 |
 <a href="https://huggingface.co/collections/golaxy/knowcoder-65fc3cd385d98567da412abf" >🤗 Resource (Schema • Data • Model)</a>
 |
-<a href="https://ict-goknow.github.io/knowcoder/">🚀 Try KnowCoder (coming soon)!</a>
+<a href="http://gomate.ac.cn:10521/">🚀 Try KnowCoder!</a>
 </p>
 
 
