@@ -1,0 +1,13 @@
+class Event:
+	def __init__(self, trigger: str, arg_names, *args):
+		self.trigger = trigger
+		self.arguments = {}
+		for arg_name, arg_values in zip(arg_names, args):
+			self.arguments[arg_name] = arg_values
+{% for class_def in class_defs %}
+{{ class_def }}
+{% endfor %}
+"""
+This is an object-oriented programming task: Some Event Classes are defined above. Please instantiate all the corresponding Event Objects in the following sentence.
+"""
+sentence = "{{sentence}}"

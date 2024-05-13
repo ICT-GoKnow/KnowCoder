@@ -1,0 +1,10 @@
+class Entity:
+	def __init__(self, name: str):
+		self.name = name
+{% for class_def in class_defs %}
+{{ class_def }}
+{% endfor %}
+"""
+This is an object-oriented programming task: Some Entity Classes are defined above. Please instantiate all the corresponding Entity Objects in the following sentence.
+"""
+sentence = "{{sentence}}"

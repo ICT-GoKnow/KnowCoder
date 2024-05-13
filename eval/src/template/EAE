@@ -1,0 +1,14 @@
+class Entity:
+	def __init__(self, name: str):
+		self.name = name
+
+class Event:
+	def __init__(self, trigger: str):
+		self.trigger = trigger
+{% for class_def in class_defs %}
+{{ class_def }}
+{% endfor %}
+"""
+This is an object-oriented programming task: Some Event Classes are defined above. Please instantiate all the corresponding Event Objects in the following sentence. 
+"""
+sentence = "{{sentence}}"

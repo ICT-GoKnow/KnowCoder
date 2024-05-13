@@ -1,0 +1,51 @@
+{
+    "Justice": [
+        "Acquit",
+        "Appeal",
+        "ArrestJailDetain",
+        "ChargeIndict",
+        "Convict",
+        "Execute",
+        "Extradite",
+        "Fine",
+        "Pardon",
+        "ReleaseParole",
+        "Sentence",
+        "Sue",
+        "TrialHearing"
+    ],
+    "Conflict": [
+        "Attack",
+        "Demonstrate"
+    ],
+    "Life": [
+        "BeBorn",
+        "Die",
+        "Divorce",
+        "Injure",
+        "Marry"
+    ],
+    "Business": [
+        "DeclareBankruptcy",
+        "EndOrganization",
+        "MergeOrganization",
+        "StartOrganization"
+    ],
+    "Personnel": [
+        "Elect",
+        "EndPosition",
+        "Nominate",
+        "StartPosition"
+    ],
+    "Contact": [
+        "Meet",
+        "PhoneWrite"
+    ],
+    "Transaction": [
+        "TransferMoney",
+        "TransferOwnership"
+    ],
+    "Movement": [
+        "Transportation"
+    ]
+}
