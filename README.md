@@ -151,7 +151,121 @@ We conduct supervised experiments on four IE tasks, including NER, RE, ED, and E
 
 # ⚡️ Quickstart
 
-**Coming soon!**
+## 📦 Installation
+
+#### 1. Clone the GitHub Repository:
+
+```bash
+git clone https://github.com/ICT-GoKnow/KnowCoder
+cd KnowCoder/
+```
+
+#### 2. Setup Python Environment: 
+
+**Note:** *You need to create two environments for pretrain and sft, respectively.*
+
+```bash
+conda create -n knowcoder_pretrain_env python=3.8 -y
+conda create -n knowcoder_sft_env python=3.10 -y
+```
+
+#### 3. Install Dependencies:
+
+```bash
+cd pretrain
+conda activate knowcoder_pretrain_env
+pip3 install -r requirements.txt
+```
+
+```bash
+cd sft
+conda activate knowcoder_sft_env
+pip3 install -r requirements.txt
+```
+
+
+## 🔨 Training
+
+### Schema Understanding Phase
+**Note:** *Since the model cannot be loaded on a single card, the model needs to be pipelined in parallel, which involves splitting the model layer, and different Gpus load different parts of the model parameters. The Deepspeed pipeline parallelism needs to encapsulate the model, so the model parameters in hf format need to be converted.*
+
+#### 1. Prepare Environment:
+
+```bash
+cd pretrain
+conda activate knowcoder_pretrain_env
+```
+
+#### 2. Convert hf model to ckpt format
+Under the deepspeed setting, the hf format model cannot be trained directly, so the format needs to be converted.
+Before training, you need to convert hf format to ckpt format. 
+
+```bash
+bash scripts/convert.sh
+```
+#### 3. Training
+You can run it as follows and you can modify the hyper parametrers in scripts/train.sh.
+```bash
+bash scripts/train.sh
+```
+
+#### 4. Convert ckpt to hf model
+When the training is over, the ckpt format needs to be converted to hf format to do the inference.
+```bash
+bash scripts/hf_convert.sh
+```
+
+### Schema Following Phase
+
+#### 1. Prepare Environment:
+
+```bash
+cd sft
+conda activate knowcoder_sft_env
+```
+
+#### 2. Training
+
+You can run it as follows and you can modify the hyper parametrers in scripts/train.sh.
+```bash
+bash scripts/train.sh
+```
+#### 3. Merge
+When the training is over, you need to merge the lora parameters to the original model.
+```bash
+bash scripts/merge_lora_ckpts.sh
+```
+
+## 📈 Evaluation
+
+#### 1. Prepare Environment:
+
+```bash
+cd eval
+conda activate knowcoder_sft_env
+```
+
+#### 2. Inference
+
+After the training is finished and the model is converted to hf format, you can follow the following steps to inference.
+```bash
+bash scripts/inference.sh
+```
+In scripts/inference.sh, you can modify the task, benchmark_dir, model_dir, output_dir.
+
+#### 3. Eval
+
+When the inference result is obtained, it can be tested according to the inference result.
+```bash
+bash scripts/eval.sh
+```
+In scripts/eval.sh, you can modify the evaluation options like ckpts, tasks, wikidata_upper, filter_outlier, and so on.
+
+#### 4. Visualization
+After the calculated metrics are obtained, a simple visual display can be performed according to the following visual code.
+```bash
+bash scripts/visual.sh
+```
 
 
 # 🚀 Demo
