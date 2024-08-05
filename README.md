@@ -97,8 +97,8 @@ For specific domain Information Extraction (IE), we conduct experiments utilizin
 After two phases of training (i.e. Schema Understanding Phase and Schema Following Phase) on KnowCoder Dataset, KnowCoder has the powerful general information extraction ability under Zero-shot, Few-shot, Low-resource, and Supervised settings. 
 
 We release two variants of KnowCoder, the base version trained in two phases and the IE version further refined with Specific Domain IE Data on the base version:
-- [KnowCoder-7b-base](https://huggingface.co/golaxy/KnowCoder-7B-base): using Llama-2-7b as the backbone with 4k context window.
-- [KnowCoder-7b-IE](https://huggingface.co/golaxy/KnowCoder-7B-IE): using Llama-2-7b as the backbone with 4k context window.
+- [KnowCoder-7b-base](https://huggingface.co/golaxy/KnowCoder-7B-base): using Llama-2-7b as the backbone with 2048 context window.
+- [KnowCoder-7b-IE](https://huggingface.co/golaxy/KnowCoder-7B-IE): using Llama-2-7b as the backbone with 2048 context window.
 
 
 # 💥 Performance
